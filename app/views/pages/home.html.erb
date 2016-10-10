@@ -1,14 +1,57 @@
 <head>
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <style>
-.lines {
-	float: left;
-	margin: px;
-	padding: 20px;
-	max-width: 300px;
-	height: 300px;
-	border: 1px solid black;
+.bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+}
+
+.bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+.bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
+
+.container-fluid {
+	padding-top: 70px;
+	padding-bottom: 70px;
 
 }
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+body {
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+
+p {font-size: 16px;}
+
+.margin {margin-bottom: 45px;}
+
+</style>
 
 </style>
 </head>
@@ -17,48 +60,64 @@
 
 
 
-<h1> Enough is enough </h1>
+<h1> </h1>
 
-<%= link_to "About", about_path %>
 
-<iframe width="711" height="400" align="center" src="https://www.youtube.com/embed/vLaX8UvVUQw" frameborder="0" allowfullscreen>
-</iframe>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">WHO</a></li>
+        <li><a href="#">WHAT</a></li>
+        <li><a href="#">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<br>
+<div class="container-fluid bg-1 text-center">
+    <h3>Who Am I?</h3>
+    <img src="https://images-na.ssl-images-amazon.com/images/I/31NRL7Lu9ZL.jpg" class = "img-circle" alt="LEGO Nick Fury">
+    <h3>I'm an adventurer</h3>
+    <br></br>
+    <%= link_to "About", about_path %>
+</div>
 
-</br>
-
-<div class="lines">
-
-<h1>Are you ready for the truth?</h1>
-
-<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
+<div class="container-fluid bg-2 text-center">
+  <h3>What Am I?</h3>
+  <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. </p>
+  <a href ="#" class = "btn btn-default btn-lg">
+  	<span class ="glyphicon glyphicon-search"></span> Search</a>
 
 </div>
 
-<div class="lines">
-
-<h1>I can do that</h1>
-
-<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass. </p>
-
+<div class="container-fluid bg-3 text-center">
+  <h3>Where To Find Me?</h3>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="https://s-media-cache-ak0.pinimg.com/236x/81/02/24/81022459ee2a2ebc6fb8b3f34eb65d28.jpg" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="https://celebdial.s3.amazonaws.com/celeb_pic/samuel-l-jackson-image.jpeg" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="http://e.snmc.io/lk/f/a/f3ab7ec449d4114d482eb5a22a5d83f9/2906500.jpg" alt="Image">
+    </div>
+  </div>
+  
 </div>
 
-<div class="lines">
-
-<h1>Is she dead, yes or no?</h1>
-
-<p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand? </p>
-
-</div>
-
-<div class="lines">
-
-<h1>I can do that</h1>
-
-<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man. </p>
-
-</div>
 
 
 </body>
